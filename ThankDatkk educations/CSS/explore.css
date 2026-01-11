@@ -1,0 +1,132 @@
+/* explore.css - phong cách tương tự my-courses.css */
+
+/* Container chính */
+.explore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.explore-title {
+    font-size: 2em;
+    color: #c084fc;
+    margin: 40px 0 15px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(192,132,252,0.5);
+}
+
+.explore-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+/* Danh mục (Categories) */
+.categories-section {
+    margin-bottom: 50px;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.category-chip {
+    padding: 10px 20px;
+    background: #334155;
+    border-radius: 30px;
+    color: #cbd5e1;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(192,132,252,0.1);
+}
+
+.category-chip:hover,
+.category-chip.active {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(192,132,252,0.4);
+}
+
+/* Grid khóa học */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(192,132,252,0.15);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(192,132,252,0.3);
+}
+
+.course-thumbnail {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 20px;
+}
+
+.course-title {
+    font-size: 1.4em;
+    color: #e2e8f0;
+    margin-bottom: 10px;
+}
+
+.course-desc {
+    font-size: 0.95em;
+    color: #94a3b8;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.course-level {
+    background: rgba(99,102,241,0.15);
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: #a78bfa;
+}
+
+.course-action {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.course-action:hover {
+    background: linear-gradient(135deg, #8b5cf6, #c084fc);
+    transform: translateY(-2px);
+}

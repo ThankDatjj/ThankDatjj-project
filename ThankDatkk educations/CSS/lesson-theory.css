@@ -1,0 +1,105 @@
+.lesson-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.lesson-content-box {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 35px;
+    border: 1px solid rgba(192,132,252,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.lesson-content-box h2 {
+    color: #c084fc;
+    margin-top: 0;
+    font-size: 2.1em;
+    text-shadow: 0 0 10px rgba(192,132,252,0.3);
+}
+
+.lesson-content-box h3 {
+    color: #a78bfa;
+    margin: 40px 0 20px;
+    font-size: 1.6em;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.principle-card {
+    background: #253347;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(192,132,252,0.1);
+    transition: transform 0.3s ease;
+}
+
+.principle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(192,132,252,0.2);
+}
+
+.principle-card h4 {
+    color: #e2e8f0;
+    margin: 0 0 12px;
+}
+
+.benefit-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.benefit-list li {
+    margin: 12px 0;
+    padding-left: 28px;
+    position: relative;
+    color: #cbd5e1;
+}
+
+.benefit-list li::before {
+    content: "→";
+    color: #c084fc;
+    position: absolute;
+    left: 0;
+}
+
+.lesson-actions {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btn-back, .btn-next {
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-back {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+.btn-back:hover {
+    background: #475569;
+    color: white;
+}
+
+.btn-next {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+}
+
+.btn-next:hover {
+    background: linear-gradient(135deg, #8b5cf6, #c084fc);
+    transform: translateY(-2px);
+}

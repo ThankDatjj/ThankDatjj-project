@@ -1,0 +1,128 @@
+.exercise-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.exercise-instruction {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid rgba(192,132,252,0.15);
+}
+
+.exercise-instruction h2 {
+    color: #c084fc;
+    margin-top: 0;
+}
+
+.exercise-instruction code {
+    background: #253347;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #e2e8f0;
+}
+
+.time-warning {
+    margin-top: 25px;
+    padding: 15px;
+    background: rgba(249,115,22,0.15);
+    border-left: 4px solid #f97316;
+    border-radius: 6px;
+    color: #fed7aa;
+}
+
+.code-area {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid rgba(192,132,252,0.15);
+}
+
+.code-editor-wrapper {
+    position: relative;
+    height: 520px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#code-display {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: 0;
+    padding: 20px;
+    background: #e9e9e9;
+    color: #c084fc; 
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+#code-input {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: transparent;
+    #code-display
+    caret-color: #f472b6;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    border: none;
+    outline: none;
+    resize: none;
+    z-index: 2;
+}
+
+.exercise-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-submit, .btn-reset {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none !important;
+    color: white;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #8b5cf6, #c084fc);
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+.btn-reset:hover {
+    background: #475569;
+}
+
+.status {
+    color: #a78bfa;
+    font-weight: 500;
+}

@@ -1,0 +1,118 @@
+.course-detail-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.course-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid rgba(192,132,252,0.15);
+}
+
+.course-banner {
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.course-info-header h2 {
+    color: #c084fc;
+    margin: 0 0 10px;
+}
+
+.course-meta {
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.overall-progress {
+    margin-top: 15px;
+}
+
+.chapters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.chapter-item {
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(192,132,252,0.15);
+}
+
+.chapter-header {
+    padding: 18px 25px;
+    background: #253347;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e2e8f0;
+}
+
+.chapter-progress {
+    color: #a78bfa;
+    font-weight: 500;
+}
+
+.lessons-list {
+    padding: 10px 0;
+}
+
+.lesson-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 25px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.lesson-item:last-child {
+    border-bottom: none;
+}
+
+.lesson-icon {
+    font-size: 2em;
+    width: 50px;
+    text-align: center;
+}
+
+.lesson-content h4 {
+    margin: 0 0 6px;
+    color: #e2e8f0;
+}
+
+.lesson-desc, .lesson-item .status {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 0.92em;
+}
+
+.lesson-btn, .start-exercise {
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none !important;
+}
+
+.lesson-btn:hover, .start-exercise:hover {
+    background: linear-gradient(135deg, #8b5cf6, #c084fc);
+    transform: translateY(-2px);
+}
+
+/* Trạng thái đã hoàn thành */
+.lesson-item.completed .lesson-content h4 {
+    color: #a78bfa;
+    text-decoration: line-through;
+}

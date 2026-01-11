@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá - ThankDatjj Education</title>
+   
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <!-- CSS chung -->
+    <link rel="stylesheet" href="/CSS/menu.css">
+   
+    <!-- CSS riêng cho trang khám phá -->
+    <link rel="stylesheet" href="/CSS/explore.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>ThankDatjj</h2>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <img src="/assets/images/home.png" alt="Trang chủ" class="nav-icon">
+                    <span class="nav-text">Trang chủ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="courses.html" class="nav-link">
+                    <img src="/assets/images/courses.png" alt="Khóa học của tôi" class="nav-icon">
+                    <span class="nav-text">Khóa học của tôi</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/explore.html" class="nav-link active">
+                    <img src="/assets/images/explore.png" alt="Khám phá" class="nav-icon">
+                    <span class="nav-text">Khám phá</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/progress.html" class="nav-link">
+                    <img src="/assets/images/progress.png" alt="Tiến độ" class="nav-icon">
+                    <span class="nav-text">Tiến độ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/setting.html" class="nav-link">
+                    <img src="/assets/images/settings.png" alt="Cài đặt" class="nav-icon">
+                    <span class="nav-text">Cài đặt</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="welcome">
+                <h1>Khám phá</h1>
+                <p>Tìm kiếm khóa học phù hợp với bạn</p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">Đ</div>
+                <button class="logout-btn">
+                    <a href="login.html" class="logout-link">Đăng xuất</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- Nội dung khám phá -->
+        <div class="explore-container">
+            <h2 class="explore-title">Khám phá khóa học mới</h2>
+            <p class="explore-subtitle">Hàng trăm khóa học chất lượng từ cơ bản đến nâng cao</p>
+
+            <!-- Danh mục -->
+            <div class="categories-section">
+    <div class="categories-list">
+        <span class="category-chip active" data-category="all">Tất cả</span>
+        <span class="category-chip" data-category="laptrinh">Lập trình</span>
+        <span class="category-chip" data-category="web">Web Development</span>
+        <span class="category-chip" data-category="mobile">Mobile App</span>
+        <span class="category-chip" data-category="backend">Backend</span>
+        <span class="category-chip" data-category="devops">DevOps</span>
+        <span class="category-chip" data-category="ai">AI & Machine Learning</span>
+    </div>
+</div>
+
+            <!-- Grid khóa học -->
+            <div class="courses-grid">
+                <!-- Khóa 1 -->
+                <div class="course-card" data-category="laptrinh ai">
+                    <img src="/assets/images/zetohe.png" alt="Python" class="course-thumbnail">
+                    <div class="course-info">
+                        <h3 class="course-title">Python từ Zero đến Hero 2025</h3>
+                        <p class="course-desc">Học Python toàn diện: từ cơ bản đến automation, data science, web...</p>
+                        <div class="course-meta">
+                            <span class="course-level">Trình độ: Cơ bản → Nâng cao</span>
+                            <span>4.9 ★</span>
+                        </div>
+                        <a href="https://tainguyensieure.com/py01-phan-tich-du-lieu-voi-lap-trinh-python/" class="course-action">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <!-- Khóa 2 -->
+                <div class="course-card" data-category="web laptrinh">
+                    <img src="/assets/images/fullstacl.png" alt="React" class="course-thumbnail">
+                    <div class="course-info">
+                        <h3 class="course-title">React & Next.js 14 Fullstack</h3>
+                        <p class="course-desc">Xây dựng ứng dụng web hiện đại với React, Next.js, TypeScript, Tailwind...</p>
+                        <div class="course-meta">
+                            <span class="course-level">Trình độ: Trung cấp → Nâng cao</span>
+                            <span>4.8 ★</span>
+                        </div>
+                        <a href="https://www.fiverr.com/exhaust_dev/develop-modern-full-stack-web-application-with-next-js-13-node-js-react" class="course-action">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <!-- Khóa 3 -->
+                <div class="course-card" data-category="devops">
+                    <img src="/assets/images/systemdesign.png" alt="System Design" class="course-thumbnail">
+                    <div class="course-info">
+                        <h3 class="course-title">System Design cho Phỏng vấn</h3>
+                        <p class="course-desc">Thiết kế hệ thống lớn: Netflix, TikTok, Grab, Shopee... case study thực tế</p>
+                        <div class="course-meta">
+                            <span class="course-level">Trình độ: Nâng cao</span>
+                            <span>4.7 ★</span>
+                        </div>
+                        <a href="https://topdev.vn/blog/top-khai-niem-system-design/" class="course-action">Xem chi tiết</a>
+                    </div>
+                </div>
+            <!-- Khóa 4 - JavaScript Nâng cao -->
+<div class="course-card" data-category="laptrinh web backend">
+    <img src="/assets/images/javacard.jfif" alt="Advanced JS" class="course-thumbnail">
+    <div class="course-info">
+        <h3 class="course-title">JavaScript Nâng Cao & Modern ES2025+</h3>
+        <p class="course-desc">Async/await sâu, Proxy, Reflect, Temporal API, performance optimization...</p>
+        <div class="course-meta">
+            <span class="course-level">Trình độ: Trung cấp → Nâng cao</span>
+            <span>4.8 ★</span>
+        </div>
+        <a href="https://viblo.asia/p/es6-va-javascript-nang-cao-924lJj48lPM" class="course-action">Xem chi tiết</a>
+    </div>
+</div>
+
+<!-- Khóa 5 - Docker & Kubernetes -->
+<div class="course-card" data-category="devops backend">
+    <img src="/assets/images/docker.png" alt="Docker Kubernetes" class="course-thumbnail">
+    <div class="course-info">
+        <h3 class="course-title">Docker & Kubernetes Từ Cơ Bản Đến Production</h3>
+        <p class="course-desc">Container hóa, orchestration, CI/CD, Helm, monitoring với Prometheus...</p>
+        <div class="course-meta">
+            <span class="course-level">Trình độ: Trung cấp → Nâng cao</span>
+            <span>4.9 ★</span>
+        </div>
+        <a href="https://tuyendung.evotek.vn/tu-docker-den-production-nhung-dieu-ban-can-biet/" class="course-action">Xem chi tiết</a>
+    </div>
+</div>
+
+<!-- Khóa 6 - Machine Learning Cơ bản -->
+<div class="course-card" data-category="ai backend">
+    <img src="/assets/images/machine.jpg" alt="Machine Learning" class="course-thumbnail">
+    <div class="course-info">
+        <h3 class="course-title">Machine Learning Cơ Bản Với Python 2025</h3>
+        <p class="course-desc">Scikit-learn, feature engineering, model evaluation, cross-validation, dự án thực tế</p>
+        <div class="course-meta">
+            <span class="course-level">Trình độ: Cơ bản → Trung cấp</span>
+            <span>4.7 ★</span>
+        </div>
+        <a href="https://daotaotrituenhantao.com/hoc-machine-learning-khoa-co-ban-cho-nguoi-moi-bat-dau/" class="course-action">Xem chi tiết</a>
+    </div>
+</div>
+
+<!-- Khóa 7 - TypeScript & Node.js -->
+<div class="course-card" data-category="backend laptrinh">
+    <img src="/assets/images/typescr.webp" alt="TypeScript Node" class="course-thumbnail">
+    <div class="course-info">
+        <h3 class="course-title">TypeScript + Node.js Backend Hiện Đại</h3>
+        <p class="course-desc">Xây dựng API scalable, NestJS, Prisma, authentication JWT + OAuth2...</p>
+        <div class="course-meta">
+            <span class="course-level">Trình độ: Trung cấp</span>
+            <span>4.8 ★</span>
+        </div>
+        <a href="https://tokyotechlab.edu.vn/khoa-hoc/node-js-with-typescript-and-next-js" class="course-action">Xem chi tiết</a>
+    </div>
+</div>
+
+<!-- Khóa 8 - UI/UX Design cho Developer -->
+<div class="course-card" data-category="laptrinh mobile">
+    <img src="/assets/images/uxui.jpg" alt="UI UX Design" class="course-thumbnail">
+    <div class="course-info">
+        <h3 class="course-title">UI/UX Design Dành Riêng Cho Developer</h3>
+        <p class="course-desc">Figma, design system, atomic design, UX writing, prototyping cho lập trình viên</p>
+        <div class="course-meta">
+            <span class="course-level">Trình độ: Cơ bản → Trung cấp</span>
+            <span>4.6 ★</span>
+        </div>
+        <a href="https://topdev.vn/blog/mot-so-nguyen-tac-thiet-ke-ui-ux-website/" class="course-action">Xem chi tiết</a>
+    </div>
+</div>
+            </div>
+        </div>
+    </main>
+    <script src="/JAVA/explore.js"></script>
+</body>
+</html>

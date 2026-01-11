@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.1: Giới thiệu về OOP - Java OOP</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/menu.css">           <!-- sidebar chung -->
+    <link rel="stylesheet" href="/CSS/lesson-theory.css">   <!-- css riêng cho nội dung lý thuyết -->
+</head>
+<body>
+    <!-- Giữ nguyên sidebar như các trang trước -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>ThankDatjj</h2>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <img src="/assets/images/home.png" alt="Trang chủ" class="nav-icon">
+                    <span class="nav-text">Trang chủ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="courses.html" class="nav-link active">
+                    <img src="/assets/images/courses.png" alt="Khóa học của tôi" class="nav-icon">
+                    <span class="nav-text">Khóa học của tôi</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="explore.html" class="nav-link">
+                    <img src="/assets/images/explore.png" alt="Khám phá" class="nav-icon">
+                    <span class="nav-text">Khám phá</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/progress.html" class="nav-link">
+                    <img src="/assets/images/progress.png" alt="Tiến độ" class="nav-icon">
+                    <span class="nav-text">Tiến độ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/setting.html" class="nav-link">
+                    <img src="/assets/images/settings.png" alt="Cài đặt" class="nav-icon">
+                    <span class="nav-text">Cài đặt</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <!-- Topbar đơn giản cho trang bài học -->
+        <div class="topbar">
+            <div class="welcome">
+                <h1>Bài 1.1: Giới thiệu về Lập trình Hướng Đối tượng</h1>
+                <p>Chương 1 - Cơ bản về OOP</p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">Đ</div>
+            </div>
+        </div>
+
+        <!-- Nội dung chính - lý thuyết -->
+        <div class="lesson-container">
+            <div class="lesson-content-box">
+                <h2>OOP là gì?</h2>
+                <p>
+                    <strong>Lập trình hướng đối tượng (Object-Oriented Programming - OOP)</strong> 
+                    là một phương pháp lập trình dựa trên khái niệm về <strong>đối tượng</strong> 
+                    và <strong>lớp</strong>. Thay vì tập trung vào các hàm và quy trình xử lý, 
+                    OOP tổ chức mã nguồn xung quanh các "đối tượng" – những thực thể có cả 
+                    <strong>dữ liệu</strong> và <strong>hành vi</strong>.
+                </p>
+
+                <h3>4 nguyên tắc cơ bản của OOP</h3>
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <h4>1. Tính đóng gói (Encapsulation)</h4>
+                        <p>Ẩn chi tiết triển khai, chỉ cho phép truy cập thông qua các phương thức công khai.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>2. Tính kế thừa (Inheritance)</h4>
+                        <p>Lớp con có thể kế thừa thuộc tính và phương thức từ lớp cha, giúp tái sử dụng code.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>3. Tính đa hình (Polymorphism)</h4>
+                        <p>Cùng một hành động có thể được thực hiện theo nhiều cách khác nhau tùy thuộc vào đối tượng.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>4. Tính trừu tượng (Abstraction)</h4>
+                        <p>Ẩn đi chi tiết phức tạp, chỉ hiển thị những gì cần thiết cho người sử dụng.</p>
+                    </div>
+                </div>
+
+                <h3>Tại sao nên học OOP?</h3>
+                <ul class="benefit-list">
+                    <li>Mã nguồn dễ bảo trì và mở rộng hơn</li>
+                    <li>Tái sử dụng code tốt (kế thừa, composition)</li>
+                    <li>Mô hình hóa thế giới thực hiệu quả hơn</li>
+                    <li>Hỗ trợ tốt cho các dự án lớn và làm việc nhóm</li>
+                    <li>Nền tảng cho hầu hết các framework hiện đại (Spring, JavaFX, Android...)</li>
+                </ul>
+
+                <div class="lesson-actions">
+                    <a href="/HTML/courses.html" class="btn-back">← Quay lại danh sách chương</a>
+                    <a href="/HTML/lesson-1-2-exercise.html" class="btn-next">
+                        Tiếp tục → Bài tập: Tạo class Person
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

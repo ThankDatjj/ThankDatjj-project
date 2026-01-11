@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.2: Tạo class Person - Java OOP</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <link rel="stylesheet" href="/CSS/exercise.css"> <!-- CSS riêng cho bài tập -->
+    
+    <!-- Prism.js cho syntax highlighting (tùy chọn nhưng rất đẹp) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+
+
+</head>
+<body>
+    <!-- Sidebar giữ nguyên -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>ThankDatjj</h2>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <img src="/assets/images/home.png" alt="Trang chủ" class="nav-icon">
+                    <span class="nav-text">Trang chủ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="courses.html" class="nav-link active">
+                    <img src="/assets/images/courses.png" alt="Khóa học của tôi" class="nav-icon">
+                    <span class="nav-text">Khóa học của tôi</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="explore.html" class="nav-link">
+                    <img src="/assets/images/explore.png" alt="Khám phá" class="nav-icon">
+                    <span class="nav-text">Khám phá</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/progress.html" class="nav-link">
+                    <img src="/assets/images/progress.png" alt="Tiến độ" class="nav-icon">
+                    <span class="nav-text">Tiến độ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/setting.html" class="nav-link">
+                    <img src="/assets/images/settings.png" alt="Cài đặt" class="nav-icon">
+                    <span class="nav-text">Cài đặt</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <div class="topbar">
+            <div class="welcome">
+                <h1>Bài 1.2: Tạo class Person</h1>
+                <p>Chương 1 • Thời gian còn lại: <span id="exercise-timer">45:00</span></p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">Đ</div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <div class="exercise-instruction">
+                <h2>Yêu cầu bài tập</h2>
+                <p>Hãy tạo một class <code>Person</code> trong Java với các yêu cầu sau:</p>
+                
+                <ul>
+                    <li>Có 3 thuộc tính private:
+                        <ul>
+                            <li><code>name</code> (String) - tên người</li>
+                            <li><code>age</code> (int) - tuổi</li>
+                            <li><code>gender</code> (String) - giới tính ("Nam", "Nữ", "Khác")</li>
+                        </ul>
+                    </li>
+                    <li>Tạo constructor đầy đủ tham số (3 tham số)</li>
+                    <li>Tạo getter cho tất cả các thuộc tính</li>
+                    <li>Tạo phương thức <code>displayInfo()</code> in ra thông tin người theo định dạng:
+                        <pre><code class="language-java">Tên: [name] | Tuổi: [age] | Giới tính: [gender]</code></pre>
+                    </li>
+                    <li>Trong class <code>Main</code>, tạo ít nhất 2 đối tượng Person và gọi phương thức <code>displayInfo()</code></li>
+                </ul>
+
+                <div class="time-warning">
+                    <strong>Thời gian làm bài: 45 phút</strong><br>
+                    Khi hết giờ, bài tập sẽ tự động đánh dấu "Hết thời gian" (bạn vẫn có thể nộp nhưng sẽ bị trừ điểm).
+                </div>
+            </div>
+
+            <div class="code-area">
+                <h3>Khu vực viết code của bạn</h3>
+                <div class="code-editor-wrapper">
+                    <pre><code class="language-java" id="code-display"></code></pre>
+                    <textarea id="code-input" spellcheck="false" placeholder="// Bắt đầu code ở đây..."></textarea>
+                </div>
+
+                <div class="exercise-actions">
+                    <a href="/HTML/success.html" style="font-size: 80%;" class="btn-submit">Nộp bài</a>
+                    <button id="reset-btn" class="btn-reset">Reset code</button>
+                    <span id="status-message" class="status"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/JAVA/exercise-timer.js"></script>
+</body>
+</html>

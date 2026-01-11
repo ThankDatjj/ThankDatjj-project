@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt - ThankDatjj Education</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <link rel="stylesheet" href="/CSS/setting.css"> <!-- CSS riêng cho trang cài đặt -->
+</head>
+<body>
+    <!-- Sidebar giữ nguyên, đánh dấu active cho Cài đặt -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>ThankDatjj</h2>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <img src="/assets/images/home.png" alt="Trang chủ" class="nav-icon">
+                    <span class="nav-text">Trang chủ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="courses.html" class="nav-link">
+                    <img src="/assets/images/courses.png" alt="Khóa học của tôi" class="nav-icon">
+                    <span class="nav-text">Khóa học của tôi</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="explore.html" class="nav-link">
+                    <img src="/assets/images/explore.png" alt="Khám phá" class="nav-icon">
+                    <span class="nav-text">Khám phá</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="progress.html" class="nav-link">
+                    <img src="/assets/images/progress.png" alt="Tiến độ" class="nav-icon">
+                    <span class="nav-text">Tiến độ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/setting.html" class="nav-link active">
+                    <img src="/assets/images/settings.png" alt="Cài đặt" class="nav-icon">
+                    <span class="nav-text">Cài đặt</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="welcome">
+                <h1>Cài đặt tài khoản</h1>
+                <p>Quản lý thông tin cá nhân, bảo mật và tùy chọn</p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">Đ</div>
+                <button class="logout-btn">
+                    <a href="login.html" class="logout-link">Đăng xuất</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- Nội dung chính -->
+        <div class="settings-container">
+            <!-- Tab navigation (có thể mở rộng sau) -->
+            <div class="settings-tabs">
+                <button class="tab-btn active">Tài khoản</button>
+                <button class="tab-btn">Bảo mật</button>
+                <button class="tab-btn">Thông báo</button>
+                <button class="tab-btn">Giao diện</button>
+            </div>
+
+            <!-- Phần Tài khoản -->
+            <div class="settings-section active">
+                <h2>Thông tin cá nhân</h2>
+                
+                <div class="form-group">
+                    <label for="fullName">Họ và tên</label>
+                    <input type="text" id="fullName" value="Nguyễn Quốc Thành Đạt" placeholder="Họ và tên">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="nguyenquocthanhdat@gmail.com" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label>Ảnh đại diện</label>
+                    <div class="avatar-upload">
+                        <div class="current-avatar">Đ</div>
+                        <button class="upload-btn">Thay đổi ảnh</button>
+                        <input type="file" id="avatarInput" accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <button class="save-btn">Lưu thay đổi</button>
+            </div>
+
+            <!-- Phần Bảo mật -->
+            <div class="settings-section">
+                <h2>Bảo mật tài khoản</h2>
+                
+                <div class="form-group">
+                    <label>Mật khẩu hiện tại</label>
+                    <input type="password" placeholder="••••••••">
+                </div>
+
+                <div class="form-group">
+                    <label>Mật khẩu mới</label>
+                    <input type="password" placeholder="Nhập mật khẩu mới">
+                </div>
+
+                <div class="form-group">
+                    <label>Xác nhận mật khẩu mới</label>
+                    <input type="password" placeholder="Nhập lại mật khẩu mới">
+                </div>
+
+                <div class="security-option">
+                    <label class="toggle-label">
+                        <input type="checkbox" checked>
+                        <span>Bật xác thực 2 yếu tố (2FA)</span>
+                    </label>
+                </div>
+
+                <button class="save-btn">Cập nhật mật khẩu</button>
+            </div>
+
+            <!-- Phần Thông báo -->
+            <div class="settings-section">
+                <h2>Thông báo</h2>
+                
+                <div class="notification-options">
+                    <div class="toggle-item">
+                        <span>Thông báo email về tiến độ học tập</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-item">
+                        <span>Thông báo khi có khóa học mới</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-item">
+                        <span>Thông báo nhắc nhở học hàng ngày</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phần Giao diện -->
+            <div class="settings-section">
+                <h2>Giao diện & Ngôn ngữ</h2>
+                
+                <div class="form-group">
+                    <label>Ngôn ngữ</label>
+                    <select>
+                        <option selected>Tiếng Việt</option>
+                        <option>English</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Chế độ giao diện</label>
+                    <div class="theme-options">
+                        <button class="theme-btn active">Dark</button>
+                        <button class="theme-btn">Light</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hành động nguy hiểm -->
+            <div class="danger-zone">
+                <button class="danger-btn">Đăng xuất tất cả thiết bị</button>
+                <button class="danger-btn">Xóa tài khoản vĩnh viễn</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript đơn giản cho tab switching (có thể mở rộng sau) -->
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                document.querySelectorAll('.settings-section').forEach(sec => sec.classList.remove('active'));
+                const index = Array.from(document.querySelectorAll('.tab-btn')).indexOf(this);
+                document.querySelectorAll('.settings-section')[index].classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

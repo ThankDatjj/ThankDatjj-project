@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java OOP - ThankDatjj Education</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <link rel="stylesheet" href="/CSS/courses.css"> <!-- CSS mới -->
+</head>
+<body>
+    <!-- Giữ nguyên sidebar giống hệt trang courses.html -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>ThankDatjj</h2>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <img src="/assets/images/home.png" alt="Trang chủ" class="nav-icon">
+                    <span class="nav-text">Trang chủ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="courses.html" class="nav-link active">
+                    <img src="/assets/images/courses.png" alt="Khóa học của tôi" class="nav-icon">
+                    <span class="nav-text">Khóa học của tôi</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="explore.html" class="nav-link">
+                    <img src="/assets/images/explore.png" alt="Khám phá" class="nav-icon">
+                    <span class="nav-text">Khám phá</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/progress.html" class="nav-link">
+                    <img src="/assets/images/progress.png" alt="Tiến độ" class="nav-icon">
+                    <span class="nav-text">Tiến độ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/setting.html" class="nav-link">
+                    <img src="/assets/images/settings.png" alt="Cài đặt" class="nav-icon">
+                    <span class="nav-text">Cài đặt</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <!-- Topbar giữ nguyên -->
+        <div class="topbar">
+            <div class="welcome">
+                <h1>Java Lập trình hướng đối tượng</h1>
+                <p>Tiến độ học: 68% • Thời gian còn lại: <span id="course-timer">14 ngày 3 giờ</span></p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">Đ</div>
+                <button class="logout-btn">
+                    <a href="login.html" class="logout-link">Đăng xuất</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- Nội dung chi tiết khóa học -->
+        <div class="course-detail-container">
+            <!-- Thông tin tổng quan khóa học -->
+            <div class="course-header">
+                <img src="/assets/images/Java.png" alt="Java OOP" class="course-banner">
+                <div class="course-info-header">
+                    <h2>Java Lập trình hướng đối tượng</h2>
+                    <p class="course-meta">Trình độ: Cơ bản → Trung cấp • 42 bài học • Thời hạn: 30 ngày kể từ ngày đăng ký</p>
+                    <div class="overall-progress">
+                        <span>Tiến độ tổng: 68%</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width:68%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danh sách chương -->
+            <div class="chapters-list">
+                <div class="chapter-item">
+                    <div class="chapter-header">
+                        <h3>Chương 1: Cơ bản về Lập trình Hướng Đối tượng</h3>
+                        <span class="chapter-progress">75% (3/4 bài)</span>
+                    </div>
+                    
+                    <div class="lessons-list">
+                        <!-- Bài lý thuyết -->
+                        <div class="lesson-item theory">
+                            <div class="lesson-icon">📖</div>
+                            <div class="lesson-content">
+                                <h4>1.1 Giới thiệu về OOP</h4>
+                                <p class="lesson-desc">Khái niệm cơ bản, tại sao cần OOP...</p>
+                            </div>
+                            <a href="/HTML/lesson-1-1-theory.html" class="lesson-btn">Xem lý thuyết</a>
+                        </div>
+
+                        <!-- Bài tập có timer -->
+                        <div class="lesson-item exercise">
+                            <div class="lesson-icon">💻</div>
+                            <div class="lesson-content">
+                                <h4>1.2 Bài tập: Tạo class Person</h4>
+                                <p class="lesson-desc">Thời gian làm: <span class="timer">45:00</span></p>
+                                <p class="status">Chưa hoàn thành</p>
+                            </div>
+                            <a href="/HTML/lesson-1-2-exercise.html">
+                            <button class="lesson-btn start-exercise" 
+                                    data-lesson-id="1-2" 
+                                    data-time-limit="2700">Bắt đầu làm bài</button></a>
+                        </div>
+
+                        <!-- Các bài khác... -->
+                    </div>
+                </div>
+
+                <!-- Chương 2, 3... tương tự -->
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript xử lý timer -->
+    <script src="/JS/course-timer.js"></script>
+</body>
+</html>

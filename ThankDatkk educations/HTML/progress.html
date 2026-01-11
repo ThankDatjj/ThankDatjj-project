@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiến độ học tập - ThankDatjj Education</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <link rel="stylesheet" href="/CSS/progress.css"> <!-- CSS riêng cho trang tiến độ -->
+ 
+    <!-- Chart.js cho biểu đồ -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar giữ nguyên, đánh dấu active cho Tiến độ -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>ThankDatjj</h2>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <img src="/assets/images/home.png" alt="Trang chủ" class="nav-icon">
+                    <span class="nav-text">Trang chủ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="courses.html" class="nav-link">
+                    <img src="/assets/images/courses.png" alt="Khóa học của tôi" class="nav-icon">
+                    <span class="nav-text">Khóa học của tôi</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="explore.html" class="nav-link">
+                    <img src="/assets/images/explore.png" alt="Khám phá" class="nav-icon">
+                    <span class="nav-text">Khám phá</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="progress.html" class="nav-link active">
+                    <img src="/assets/images/progress.png" alt="Tiến độ" class="nav-icon">
+                    <span class="nav-text">Tiến độ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/setting.html" class="nav-link">
+                    <img src="/assets/images/settings.png" alt="Cài đặt" class="nav-icon">
+                    <span class="nav-text">Cài đặt</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="welcome">
+                <h1>Tiến độ học tập</h1>
+                <p>Theo dõi sự tiến bộ và duy trì động lực học tập</p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">Đ</div>
+                <button class="logout-btn">
+                    <a href="login.html" class="logout-link">Đăng xuất</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- Nội dung chính -->
+        <div class="progress-container">
+            <!-- Tổng quan tiến độ -->
+            <div class="overview-card">
+                <h2>Tổng tiến độ</h2>
+                <div class="total-progress">
+                    <div class="progress-circle" data-progress="58">
+                        <span>58%</span>
+                    </div>
+                    <div class="overview-stats">
+                        <p>Khóa học đang học: <strong>3</strong></p>
+                        <p>Bài học đã hoàn thành: <strong>47/112</strong></p>
+                        <p>Thời gian học tích lũy: <strong>42 giờ 15 phút</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biểu đồ tiến độ theo thời gian -->
+            <div class="chart-card">
+                <h2>Tiến độ theo tuần</h2>
+                <canvas id="progressChart" height="120"></canvas>
+            </div>
+
+            <!-- Chi tiết từng khóa học -->
+            <div class="courses-progress-list">
+                <h2>Chi tiết các khóa học</h2>
+                
+                <!-- Khóa 1 -->
+                <div class="course-progress-item">
+                    <div class="course-header">
+                        <img src="/assets/images/Java.png" alt="Java OOP" class="mini-thumbnail">
+                        <div class="course-info">
+                            <h3>Java Lập trình hướng đối tượng</h3>
+                            <p>Chương 1: 100% • Chương 2: 60%</p>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress-bar"><div class="progress-fill" style="width:68%"></div></div>
+                            <span>68% (24/35 bài)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Khóa 2 -->
+                <div class="course-progress-item">
+                    <div class="course-header">
+                        <img src="/assets/images/html.jpg" alt="Web Dev" class="mini-thumbnail">
+                        <div class="course-info">
+                            <h3>HTML/CSS/JavaScript Nâng cao</h3>
+                            <p>Chương 1: 80% • Chương 2: 20%</p>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress-bar"><div class="progress-fill" style="width:42%"></div></div>
+                            <span>42% (15/36 bài)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Khóa 3 -->
+                <div class="course-progress-item">
+                    <div class="course-header">
+                        <img src="/assets/images/spring-boot.jpg" alt="Spring Boot" class="mini-thumbnail">
+                        <div class="course-info">
+                            <h3>Spring Boot & REST API</h3>
+                            <p>Mới bắt đầu</p>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress-bar"><div class="progress-fill" style="width:15%"></div></div>
+                            <span>15% (8/41 bài)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/JAVA/progress.js"></script>
+</body>
+</html>

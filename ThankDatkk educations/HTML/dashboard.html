@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - ThankDatjj Education</title>
+    
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Liên kết CSS riêng -->
+    <link rel="stylesheet" href="/CSS/menu.css">
+    
+    <!-- Nếu bạn đặt menu.css trong thư mục css/, thì dùng dòng này thay thế -->
+    <!-- <link rel="stylesheet" href="css/menu.css"> -->
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>TDPE</h2>
+        </div>
+        <ul class="nav-list">
+    <li class="nav-item">
+        <a href="dashboard.html" class="nav-link active">
+            <img src="/assets/images/home.png" alt="Trang chủ" class="nav-icon">
+            <span class="nav-text">Trang chủ</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="courses.html" class="nav-link">
+            <img src="/assets/images/courses.png" alt="Khóa học của tôi" class="nav-icon">
+            <span class="nav-text">Khóa học của tôi</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="explore.html" class="nav-link">
+            <img src="/assets/images/explore.png" alt="Khám phá" class="nav-icon">
+            <span class="nav-text">Khám phá</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/HTML/progress.html" class="nav-link">
+            <img src="/assets/images/progress.png" alt="Tiến độ" class="nav-icon">
+            <span class="nav-text">Tiến độ</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/HTML/setting.html" class="nav-link">
+            <img src="/assets/images/settings.png" alt="Cài đặt" class="nav-icon">
+            <span class="nav-text">Cài đặt</span>
+        </a>
+    </li>
+</ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar: Welcome + User Info -->
+        <div class="topbar">
+            <div class="welcome">
+                <h1>Xin chào, Đạt!</h1>
+                <p>Chào mừng quay lại với hành trình học lập trình</p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">Đ</div>
+                <button class="logout-btn">
+                    <a href="login.html" class = "logout-link">Đăng xuất</a></button>
+            </div>
+        </div>
+
+        <!-- Khóa học đang học -->
+        <h2 class="section-title">Khóa học đang học</h2>
+        <div class="courses-grid">
+            <!-- Khóa 1 -->
+            <div class="course-card">
+                <img 
+                    src="/assets/images/Java.png" 
+                    alt="Khóa Java Lập trình hướng đối tượng" 
+                    class="course-img">
+                <div class="course-info">
+                    <h3 class="course-title">Java Lập trình hướng đối tượng</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%;"></div>
+                    </div>
+                    <div class="course-stats">
+                        <span>65% hoàn thành</span>
+                        <span>12/18 bài</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa 2 -->
+            <div class="course-card">
+                <img 
+                    src="/assets/images/html.jpg" 
+                    alt="Khóa HTML CSS JavaScript Nâng cao" 
+                    class="course-img">
+                <div class="course-info">
+                    <h3 class="course-title">HTML/CSS/JS Nâng cao</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <div class="course-stats">
+                        <span>30% hoàn thành</span>
+                        <span>5/16 bài</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bạn có thể thêm các khóa học khác ở đây -->
+        </div>
+
+        <!-- Phần Khóa học gợi ý (có thể mở rộng sau) -->
+        <h2 class="section-title">Khóa học gợi ý</h2>
+        <div class="courses-grid">
+            <!-- Thêm card gợi ý ở đây nếu cần -->
+            <div class="course-card">
+                <img 
+                    src="/assets/images/spring-boot.jpg" 
+                    alt="Khóa Spring Boot" 
+                    class="course-img">
+                <div class="course-info">
+                    <h3 class="course-title">Xây dựng API với Spring Boot</h3>
+                    <p class="coming-soon">Sắp ra mắt</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

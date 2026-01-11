@@ -1,0 +1,118 @@
+.progress-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.overview-card, .chart-card, .courses-progress-list {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid rgba(192,132,252,0.15);
+}
+
+.overview-card h2, .chart-card h2, .courses-progress-list h2 {
+    color: #c084fc;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Vòng tròn tiến độ tổng */
+.total-progress {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.progress-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(#c084fc 0% var(--progress), #334155 var(--progress) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress-circle::before {
+    content: "";
+    width: 110px;
+    height: 110px;
+    background: #1e293b;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.progress-circle span {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #c084fc;
+    z-index: 1;
+}
+
+/* Biểu đồ */
+.chart-card {
+    grid-column: span 2;
+}
+
+/* Danh sách khóa học */
+.courses-progress-list {
+    grid-column: span 2;
+}
+
+.course-progress-item {
+    background: #253347;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 18px;
+    transition: transform 0.2s;
+}
+
+.course-progress-item:hover {
+    transform: translateY(-3px);
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mini-thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.course-info h3 {
+    margin: 0 0 8px;
+    color: #e2e8f0;
+}
+
+.course-info p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 0.95em;
+}
+
+.progress-info {
+    margin-left: auto;
+    text-align: right;
+}
+
+.progress-info .progress-bar {
+    width: 180px;
+    height: 10px;
+    background: #334155;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.progress-info .progress-fill {
+    background: linear-gradient(90deg, #c084fc, #a78bfa);
+}
